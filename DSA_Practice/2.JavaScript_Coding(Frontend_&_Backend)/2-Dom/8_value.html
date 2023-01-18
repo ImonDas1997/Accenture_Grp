@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="name" type="text" placeholder="Enter name" value="" />
+    <input id="Mnum" type="text" placeholder="Enter no" value="" />
+
+    <button onClick="getDetails()">Submit</button>
+    <h1 id="res"></h1>
+    <h1 id="mob"></h1>
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+    <select id="plsselect" name="ageDecectioor">
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+    <button onClick="getGender()">Get gender</button>
+  </body>
+</html>
+<script>
+  function getDetails() {
+    let username = document.getElementById("name").value; //getting the value from input field
+    console.log(username);
+    let no = document.getElementById("Mnum").value;
+    document.getElementById("res").innerText = username; //binding in another field
+    document.getElementById("mob").innerText = no;
+  }
+  //------------------------------------------------------------------->
+  //using dropdown
+
+  function getGender() {
+    var x = document.getElementById("plsselect").value;
+    console.log(x);
+  }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="myFucntion()">Like Me</button>
+  </body>
+</html>
+
+<script>
+  let count = 0;
+  function myFucntion() {
+    console.log("someone Like me");//just simple consoling
+    alert("I am Alert");
+    count++;//counting how many times user clicking button
+    if (count == 3) {
+      console.log("3 times you clicked");//gicving alert messege to user
+    }
+  }
+</script>
